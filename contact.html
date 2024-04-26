@@ -22,38 +22,41 @@
     </div>
    </nav>
     
-   <header class="contact">
-     <h1>For more details contact us!</h1>
-   </header>
+   <div class="container">
+      <header class="contact">
+          <h1>For more details contact us!</h1>
+          <p>Have questions, inquiries, or need assistance? We're here to help! Whether you want to schedule a delivery, inquire about our products or services, or simply find more information, feel free to reach out to us using the contact details provided below.</p>
+      </header>
 
-   <form>
-    <div class="name">
-        <div class="input-group">
+    <form action="confirmation.html" method="post">
+        <div class="name">
             <label for="firstName" id="firstName">First Name*</label>
-            <label for="lastName" id="lastName">Last Name*</label>
-        </div>
-        <div class="input-group">
             <input type="text" name="firstName" placeholder="John"> 
+                
+            <label for="lastName" id="lastName">Last Name*</label>
             <input type="text" name="lastName" placeholder="Doe"> 
         </div>
-    </div>
+        
+        <div class="phone">
+            <label for="phone" id="phone">Phone Number*</label><br>
+            <input type="text" name="phone" placeholder="012345678"> <br>
+        </div>
     
-    <div class="phone">
-        <label for="phone" id="phone">Phone Number*</label><br>
-        <input type="text" name="phone" placeholder="01234567"> <br>
-    </div>
-
-    <div class="email">
-        <label for="email" id="email">Email address*</label><br>
-        <input type="text" name="email" placeholder="01234567">
-    </div>
-
-    <div class="message">
-        <label for="message" id="message">Message*</label><br>
-        <input type="message" name="message" placeholder="01234567">
-    </div>
-   </form>
+        <div class="email">
+            <label for="email" id="email">Email address*</label><br>
+            <input type="text" name="email" placeholder="john.doe@email.com">
+        </div>
     
+        <div class="message">
+            <label for="message" id="message">Message*</label><br>
+            <input type="textarea" name="message" placeholder="Write your message...">
+        </div>
+    
+        <div class="submit-button">
+            <input type="submit" name="message" value="Submit">
+        </div>
+    </form>
+</div>
     <script scr="script.js"></script>
 </body>
 
